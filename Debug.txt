@@ -1,0 +1,29 @@
+Debug
+
+PS C:\Users\tommy> & C:/Users/tommy/AppData/Local/Programs/Python/Python311/python.exe c:/Users/tommy/Documents/GitHub/HeroesOfTheNexus/Code.py
+PS C:\Users\tommy> & C:/Users/tommy/AppData/Local/Programs/Python/Python311/python.exe c:/Users/tommy/Documents/GitHub/HeroesOfTheNexus/Code.py
+PS C:\Users\tommy> & C:/Users/tommy/AppData/Local/Programs/Python/Python311/python.exe c:/Users/tommy/Documents/GitHub/HeroesOfTheNexus/Code.py
+PS C:\Users\tommy> & C:/Users/tommy/AppData/Local/Programs/Python/Python311/python.exe c:/Users/tommy/Documents/GitHub/HeroesOfTheNexus/Code.py
+PS C:\Users\tommy> & C:/Users/tommy/AppData/Local/Programs/Python/Python311/python.exe c:/Users/tommy/Documents/GitHub/HeroesOfTheNexus/Code.py
+PS C:\Users\tommy> & C:/Users/tommy/AppData/Local/Programs/Python/Python311/python.exe c:/Users/tommy/Documents/GitHub/HeroesOfTheNexus/Code.py
+  File "c:\Users\tommy\Documents\GitHub\HeroesOfTheNexus\Code.py", line 74
+    print("
+SyntaxError: unterminated string literal (detected at line 74)
+
+
+
+
+
+
+
+PS C:\Users\tommy>
+At line:1 char:6
++      ~
+An expression was expected after '('.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ExpectedExpression
+ 
+ File "c:\Users\tommy\Documents\GitHub\HeroesOfTheNexus\Code.py", line 50
+    demon_god = TankCard("Demon God", 10, 5, 3, 4)
+
+
