@@ -48,3 +48,29 @@ class Deck:
 class DemonGod(Card): #aatrox card 
     def __init__ (self):
         super().__init__("Demon God", 4, 5, 10, 3, "Tank") #Name, DP cost, Attack, HP, Defense and Subclass
+
+class Player:
+    def __init__(self, name, deck):
+        self.name = name
+        self.deck = deck
+        self.hand = []
+        self.board = []
+        self.max_mana = 0
+        self.current_mana = 0
+        
+    def draw_card(self):
+        card = self.deck.draw_card()
+        self.hand.append(card)
+        
+    def play_card(self, card_index):
+        card = self.hand.pop(card_index)
+        
+        if self.current_mana < card.cost:
+            print("You don't have enough mana to play that card.")
+            self.hand.append(card)
+        else:
+            self.current_mana -= card.cost
+            self.board.append(card)
+            print(f"{self.name} played {card.name}.")
+        
+                          

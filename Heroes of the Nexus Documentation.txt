@@ -1,0 +1,54 @@
+Heroes of the Nexus Documentation   created by Sodo (@aerithfan01)
+
+
+1. Introduction
+
+Heroes of the Nexus is a turn based strategy card game with Player Vs Player Elements, the main part of the game is using cards to battle with 
+different abilities and also having health, defense and attack statistics 
+
+2. How to install and run the game 
+
+Python framework
+Download the game from GIT
+use the cd command to discover the directory of the game 
+use python Heroesofthenexus.py in Terminal 
+
+3. Aim of game 
+To eliminate the other players cards and hit their nexus until the interger reaches 0 which will see the other player defeated 
+
+4. Classes and Objects
+Player: Represents a player in the game. It has properties such as name, deck, and hp.
+Card: Represents a card in the game. It has properties such as name, hp, attack, and defense.
+Game: Controls the game flow and manages player turns and game status.
+
+5. Functions and Methods
+Player.drawCard(): Draws a card from the player's deck.
+Player.playCard(card): Plays a card from the player's hand.
+Player.attack(targetPlayer, targetCard): Performs an attack on the target card belonging to the target player.
+Player.buffCard(targetCard, buffType, buffAmount): Buffs the target card with the specified buff type and amount.
+Game.startGame(): Initializes the game and starts the game loop.
+Game.executePlayerTurn(player): Executes a turn for the specified player.
+Game.checkGameEnd(): Checks if the game has ended.
+Game.displayWinner(): Displays the winner of the game.
+
+
+Example of the game:
+# Create players and their decks
+player1 = Player("Player 1", deck1)
+player2 = Player("Player 2", deck2)
+
+# Create a new game
+game = Game(player1, player2)
+
+# Start the game
+game.startGame()
+
+
+
+Limitations of the current build
+Played in console since its running in python 
+a Gui could be developed 
+More cards to be added in updates to make fresher content 
+
+
+
